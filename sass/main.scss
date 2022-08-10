@@ -1,0 +1,22 @@
+$dark: black;
+$light: rgb(83, 4, 4);
+$input-placeholder-color: rgb(83, 4, 4);
+$form-range-track-bg: rgb(35, 1, 1);
+$form-range-thumb-bg: red;
+$success :rgb(41, 155, 79);
+$warning : rgb(156, 119, 8);
+$info: rgb(8, 86, 83);
+$danger: rgb(126, 1, 1);
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors: (
+    "altligth": rgb(83, 4, 4),
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//? the series of declarations and imports is caused by a "chain" of what is being used 
+//? where
